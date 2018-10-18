@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bosswebtech.secrye">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Profile.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile.SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Profile.ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.DarkDouble" />
+        <activity android:name=".SelectPlans"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile.ForgotPassword"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.DarkDouble" />
+
+        <service android:name=".PushNotification.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".PushNotification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".IncidentDetails.IncidentDetails"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Profile.EditProfile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyIncidents"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

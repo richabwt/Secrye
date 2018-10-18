@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "860602104716",
+    "firebase_url": "https://secrye-466c1.firebaseio.com",
+    "project_id": "secrye-466c1",
+    "storage_bucket": "secrye-466c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860602104716:android:7345d4af0e3020f4",
+        "android_client_info": {
+          "package_name": "com.example.bosswebtech.secrye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860602104716-0fpjpspuee7nhjon60bfa0s5a11p8clp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bosswebtech.secrye",
+            "certificate_hash": "6085a701d34b42e328d42f1e6d7d5504a9625f54"
+          }
+        },
+        {
+          "client_id": "860602104716-4u84a5rnfbggl2eq9u9n55itjeh8lhb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaXEPRd7Tg1xFdBbpiIyUao_dgg7cXgBg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860602104716-4u84a5rnfbggl2eq9u9n55itjeh8lhb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
