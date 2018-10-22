@@ -99,7 +99,7 @@ btn_submit.setOnClickListener(new View.OnClickListener() {
 
                     if(status.equals("success")) {
 
-                        Toast.makeText(SelectPlans.this, "success", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(SelectPlans.this, "success", Toast.LENGTH_SHORT).show();
                       listPlan = response.body().getData();
 
                       for(int row = 0; row <1; row++) {
@@ -111,8 +111,15 @@ btn_submit.setOnClickListener(new View.OnClickListener() {
                               radioButtonPlans.setText(listPlan.get(i).getPlan()+"   ("+"$ "+listPlan.get(i).getPrice()+"/Month)");
                               radioButtonPlans.setTextSize(18);
                               radioGroupPlans.addView(radioButtonPlans);
+
+                              if(listPlan.get(i).getIsSelected().equals("1")){
+                                  radioButtonPlans.setChecked(true);
+                              }
                           }
                           ((ViewGroup)findViewById(R.id.radioGroupPlans)).addView(radioGroupPlans);
+
+
+
 
                           radioGroupPlans.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
                               @Override
